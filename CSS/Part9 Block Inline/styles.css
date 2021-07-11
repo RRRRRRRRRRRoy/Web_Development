@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+display:inline-block，block，inline元素的区别
+
+1、 display：block将元素显示为块级元素，从而可以更好地操控元素的宽高，以及内外边距，每一个块级元素都是从新的一行开始。
+
+2、 display : inline将元素显示为行内元素，高度，行高以及底边距不可改变，高度就是内容文字或者图片的宽度，不可以改变。
+    多个相邻的行内元素排在同一行里，知道页面一行排列不下，才会换新的一行。
+
+3、 display：inline-block看上去值名inline-block是一个混合产物，
+    实际上确是如此，将元素显示为行内块状元素，设置该属性后，其他的行内块级元素会排列在同一行。
+    比如我们li元素一个inline-block，使其既有block的宽度高度特性，又有inline的同行特性，
+    在同一行内有不同高度内容的元素时，通常要设置对齐方式如vertical-align: top;来使元素顶部对齐。
+
+*/
+
+html {
+  font-size: 100%;
+}
+
+h1 {
+  /*可以看到一整行都是灰色*/
+  background: lightslategray;
+  height: 4rem;
+}
+
+a {
+  /*inline内联块*/
+  /*block代表块*/
+  display: inline-block;
+  text-align: center;
+  background: lightslategray;
+  height: 20rem;
+  width: 20rem;
+  margin: 2rem;
+  padding: 2rem;
+  padding-top: 1rem;
+}
+
+img {
+  display: block;
+  height: 10rem;
+  width: 10rem;
+}
