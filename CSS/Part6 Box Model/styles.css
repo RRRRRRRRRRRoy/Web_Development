@@ -1,13 +1,16 @@
 div {
   background: pink;
   color: black;
-  width: 300px;
+  width: 100%;
   padding: 20px;
-  margin: 20px;
+  margin-top: 20px;
+  border: 2px solid black;
 }
 
+/*可以解决当前页面本身的布局问题*/
 * {
   margin: 0px;
   padding: 0px;
+  /*出现滚动条*/
   box-sizing: border-box;
 }
