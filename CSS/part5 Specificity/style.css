@@ -1,0 +1,8 @@
+/*CSS都是自上而下的，存在后面的覆盖前面的*/
+h1 {
+  color: coral;
+}
+
+h1 {
+  color: cornflowerblue;
+}

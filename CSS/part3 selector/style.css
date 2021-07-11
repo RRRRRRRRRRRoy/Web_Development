@@ -1,0 +1,54 @@
+h1 {
+  color: blue;
+}
+
+/*选择父标签所在类别下的子标签发生变化*/
+.random h1 {
+  color: magenta;
+}
+
+/*选择父标签所在类别下的子标签发生变化*/
+.test h1 {
+  color: yellow;
+}
+
+/* *星星选择器选择页面上的全部内容 */
+/*通常用于更改文字或者其他整体信息*/
+* {
+  font-size: 20px;
+}
+
+/*选择mylist下面的内容*/
+.My-list + ul {
+  list-style: none;
+}
+
+h1 + p {
+  color: rgb(238, 255, 0);
+}
+
+/*子选择器，匹配满足条件的后面第一个*/
+.My-list > h1 {
+  color: teal;
+}
+
+.color-change > li {
+  color: tan;
+}
+
+ul > li {
+  color: tomato;
+}
+
+.My-list a {
+  color: green;
+}
+
+/*这里如果不加li表示所有link全面成相应的颜色，数字更改为其他不变色只有一个links*/
+.links:nth-child(1) {
+  color: aquamarine;
+}
+
+.links li:nth-child(3) {
+  color: wheat;
+}
