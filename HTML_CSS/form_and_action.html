@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Froms</h1>
+    <!--这里面的action进行跳转-->
+    <!--这里如果使用JS则会把数据传递至服务端-->
+    <form action="/HTML_CSS/link.html">
+        <!--username label 和 输入框-->
+        <!--提交的时候，key为name和email-->
+        <!--跳转后可以看到submit的数据-->
+        <!--user=xxx,email=xxx-->
+        <label for="username">Username</label>
+        <!--placeholder默认显示-->
+        <!--required 表示必填-->
+        <input required maxlength="5" minlength="3" name="user" type="text" id="user" placeholder="min for 3 max for 5"/>
+        <!--email label 和 输入框-->
+        <!--这里html email自带email格式检测-->
+        <!--CSS 和 JS中也含有id标识符，标识唯一-->
+        <label for="email">E-mail</label>
+        <input required autocomplete="on" name="email" type="email" id="email"/>
+        <!--添加一个下拉选单-->
+        <select name="products" id="product">
+            <option value="Macbook 2018">Macbook</option>
+            <option value="iPhone 11">iPhone</option>
+        </select>
+        <!--添加一个textarea传递更多文字,key为message-->
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="50" rows="20">
+
+        </textarea>
+        <!--添加一个submit button-->
+        <button type="submit">submit</button>
+    </form>
+    <a href="/HTML_CSS/link.html" target="blank">Go to another page</a>
+</body>
+</html>
