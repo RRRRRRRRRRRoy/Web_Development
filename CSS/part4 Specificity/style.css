@@ -1,0 +1,24 @@
+/*CSS都是自上而下的，存在后面的覆盖前面的*/
+/*下面这种情况没有进行更改　是因为class的优先级更高，所以没有覆盖*/
+/*默认条件下 style > id > class > div */
+/*id的优先级别最高,可以通过添加！important更改优先级，但不推荐*/
+
+/*011*/
+h1.header {
+  color: blue;
+}
+
+/*段落不改变是因为这里的改变时针对h1的*/
+h1.active {
+  color: deeppink;
+}
+
+/*001的优先级比100的优先级低*/
+h1 {
+  color: coral;
+}
+
+/*段落改变这里的active是针对段落的，且h1.active的优先级更高*/
+.active {
+  color: plum;
+}

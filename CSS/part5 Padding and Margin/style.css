@@ -1,0 +1,19 @@
+button {
+  /*Margin表示边缘距离*/
+  margin: 0px;
+  /*padding表示内部膨胀*/
+  /*Top Right Bottom Left*/
+  /*两个数值的话第一个表示上下 第二个表示左右*/
+  /*也可以用padding-top.....*/
+  padding: 50px 20px 10px 5px;
+  padding-top: 50px;
+  padding-left: 5px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  background-color: crimson;
+}
+
+h1 {
+  margin: 50px;
+  background-color: yellow;
+}
