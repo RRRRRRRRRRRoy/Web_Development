@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 200%;
+}
+
+/*默认情况下不显示div*/
+.container {
+  background: cadetblue;
+  width: 80%;
+  height: 80%;
+  /*把div或者container放在中间可以用auto*/
+  /*前提width<100%,否则占据整个屏幕*/
+  margin: auto;
+  position: relative;
+}
+
+/*
+    http://www.ruanyifeng.com/blog/2019/11/css-position.html
+    static：无特殊定位，对象遵循正常文档流。top，right，bottom，left等属性不会被应用。
+    relative：对象遵循正常文档流，但将依据top，right，bottom，left等属性在正常文档流中偏移位置。而其层叠通过z-index属性定义。
+    absolute：对象脱离正常文档流，使用top，right，bottom，left等属性进行绝对定位。而其层叠通过z-index属性定义。
+    fixed：对象脱离正常文档流，使用top，right，bottom，left等属性以窗口为参考点进行定位，当出现滚动条时，对象不会随着滚动。而其层叠通过z-index属性定义。
+
+    static: 遵循文档流顺序，根据文档顺序执行，position的默认值
+    relative：相对于static时候的位置进行位移
+    absolute：相对于父元素进行移动。
+    fixed:跟随视窗滚动，fixed的窗口也进行滚动。
+    sticky: 跟随视窗滚动，类似于relative与fixed的结合。在box之间进行移动，不超过父元素
+
+*/
+
+.box1,
+.box2,
+.box3 {
+  width: 20%;
+  height: 20%;
+  background: crimson;
+}
+.box2 {
+  background: green;
+  position: relative;
+  left: 10rem;
+}
+.box3 {
+  background: purple;
+  position: sticky;
+  top: 0%;
+}
+
+.box1 {
+  /*需要上下左右定位*/
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}

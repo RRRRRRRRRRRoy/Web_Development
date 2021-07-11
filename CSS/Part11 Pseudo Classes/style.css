@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button:nth-child(3) {
+  padding: 2rem 4rem;
+  /*指针特效，悬停时侯变成小手套*/
+  cursor: pointer;
+}
+
+/*添加悬停效果*/
+button:hover {
+  background: lightslategray;
+  padding: 2rem, 4rem;
+}
+
+/*点击后变色*/
+button:focus {
+  background: green;
+}
+
+/*点击后变色*/
+input:focus {
+  background: green;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+/*在hello后添加元素，before同理*/
+h1::after {
+  content: "me";
+}
