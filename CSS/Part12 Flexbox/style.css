@@ -1,0 +1,59 @@
+/*当前flexbox是基于行布局的交叉访问，main表示行corss表示列*/
+/*当前flexbox是基于列布局的交叉访问，main表示列corss表示行*/
+/*align-items代表垂直布局*/
+/*justify-content代表水平布局*/
+nav {
+  display: flex;
+}
+html {
+  font-size: 62.5%;
+}
+nav > .logo {
+  /*没有弹性 固定尺寸*/
+
+  width: 10rem;
+  background: red;
+}
+
+nav > .menu {
+  /*尽量把容器空间填充满，没有长度，有弹性*/
+  flex: auto;
+  background: blue;
+}
+
+nav > .user {
+  /*没有弹性 固定尺寸*/
+
+  width: 10rem;
+  background: green;
+}
+
+main {
+  /*这是容器*/
+  /*显示方式为flex,实现分栏*/
+  display: flex;
+  background-color: #cccccc;
+  /*实现水平对齐，在容器中设定！！*/
+  justify-content: center;
+  /*实现垂直对齐，默认值strench，在容器中设定！！*/
+  align-items: center;
+}
+main > .item {
+  /*这是容器中的对象*/
+  /*对象在flexbar中的处理方式，none代表不能弹性缩放*/
+
+  width: 30rem;
+  margin: 1rem;
+  background-color: #ffcccc;
+}
+
+@media screen and(max-width:60rem) {
+  .head {
+    font-size: 2.4rem;
+  }
+  .content {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
